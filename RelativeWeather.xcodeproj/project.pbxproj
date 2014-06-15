@@ -11,11 +11,26 @@
 		B6D2A064194D34A2003C7294 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D2A063194D34A2003C7294 /* ViewController.swift */; };
 		B6D2A067194D34A2003C7294 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D2A065194D34A2003C7294 /* Main.storyboard */; };
 		B6D2A069194D34A2003C7294 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D2A068194D34A2003C7294 /* Images.xcassets */; };
-		B6D2A075194D34A2003C7294 /* RelativeWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D2A074194D34A2003C7294 /* RelativeWeatherTests.swift */; };
+		B6D2A07F194D3794003C7294 /* RelativeWeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D2A07E194D3794003C7294 /* RelativeWeatherForecast.swift */; };
+		B6D2A081194D427E003C7294 /* RelativeWeatherForecastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D2A080194D427E003C7294 /* RelativeWeatherForecastTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		B6D2A06F194D34A2003C7294 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6D2A054194D34A2003C7294 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6D2A05B194D34A2003C7294;
+			remoteInfo = RelativeWeather;
+		};
+		B6D2A082194D43C7003C7294 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6D2A054194D34A2003C7294 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6D2A05B194D34A2003C7294;
+			remoteInfo = RelativeWeather;
+		};
+		B6D2A084194D43C8003C7294 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B6D2A054194D34A2003C7294 /* Project object */;
 			proxyType = 1;
@@ -33,7 +48,8 @@
 		B6D2A068194D34A2003C7294 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B6D2A06E194D34A2003C7294 /* RelativeWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RelativeWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D2A073194D34A2003C7294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6D2A074194D34A2003C7294 /* RelativeWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelativeWeatherTests.swift; sourceTree = "<group>"; };
+		B6D2A07E194D3794003C7294 /* RelativeWeatherForecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = RelativeWeatherForecast.swift; sourceTree = "<group>"; tabWidth = 2; };
+		B6D2A080194D427E003C7294 /* RelativeWeatherForecastTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = RelativeWeatherForecastTests.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +93,7 @@
 			children = (
 				B6D2A061194D34A2003C7294 /* AppDelegate.swift */,
 				B6D2A063194D34A2003C7294 /* ViewController.swift */,
+				B6D2A07E194D3794003C7294 /* RelativeWeatherForecast.swift */,
 				B6D2A065194D34A2003C7294 /* Main.storyboard */,
 				B6D2A068194D34A2003C7294 /* Images.xcassets */,
 				B6D2A05F194D34A2003C7294 /* Supporting Files */,
@@ -95,7 +112,7 @@
 		B6D2A071194D34A2003C7294 /* RelativeWeatherTests */ = {
 			isa = PBXGroup;
 			children = (
-				B6D2A074194D34A2003C7294 /* RelativeWeatherTests.swift */,
+				B6D2A080194D427E003C7294 /* RelativeWeatherForecastTests.swift */,
 				B6D2A072194D34A2003C7294 /* Supporting Files */,
 			);
 			path = RelativeWeatherTests;
@@ -141,6 +158,8 @@
 			);
 			dependencies = (
 				B6D2A070194D34A2003C7294 /* PBXTargetDependency */,
+				B6D2A083194D43C7003C7294 /* PBXTargetDependency */,
+				B6D2A085194D43C8003C7294 /* PBXTargetDependency */,
 			);
 			name = RelativeWeatherTests;
 			productName = RelativeWeatherTests;
@@ -209,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6D2A064194D34A2003C7294 /* ViewController.swift in Sources */,
+				B6D2A07F194D3794003C7294 /* RelativeWeatherForecast.swift in Sources */,
 				B6D2A062194D34A2003C7294 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,7 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6D2A075194D34A2003C7294 /* RelativeWeatherTests.swift in Sources */,
+				B6D2A081194D427E003C7294 /* RelativeWeatherForecastTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +248,16 @@
 			isa = PBXTargetDependency;
 			target = B6D2A05B194D34A2003C7294 /* RelativeWeather */;
 			targetProxy = B6D2A06F194D34A2003C7294 /* PBXContainerItemProxy */;
+		};
+		B6D2A083194D43C7003C7294 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6D2A05B194D34A2003C7294 /* RelativeWeather */;
+			targetProxy = B6D2A082194D43C7003C7294 /* PBXContainerItemProxy */;
+		};
+		B6D2A085194D43C8003C7294 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6D2A05B194D34A2003C7294 /* RelativeWeather */;
+			targetProxy = B6D2A084194D43C8003C7294 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -397,6 +427,7 @@
 				B6D2A07A194D34A3003C7294 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6D2A07B194D34A3003C7294 /* Build configuration list for PBXNativeTarget "RelativeWeatherTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +436,7 @@
 				B6D2A07D194D34A3003C7294 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
