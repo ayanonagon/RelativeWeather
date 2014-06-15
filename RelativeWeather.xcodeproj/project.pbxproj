@@ -42,14 +42,14 @@
 /* Begin PBXFileReference section */
 		B6D2A05C194D34A2003C7294 /* RelativeWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RelativeWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D2A060194D34A2003C7294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6D2A061194D34A2003C7294 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B6D2A063194D34A2003C7294 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B6D2A061194D34A2003C7294 /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; tabWidth = 4; };
+		B6D2A063194D34A2003C7294 /* ViewController.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; tabWidth = 4; };
 		B6D2A066194D34A2003C7294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6D2A068194D34A2003C7294 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B6D2A06E194D34A2003C7294 /* RelativeWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RelativeWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D2A073194D34A2003C7294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6D2A07E194D3794003C7294 /* RelativeWeatherForecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = RelativeWeatherForecast.swift; sourceTree = "<group>"; tabWidth = 2; };
-		B6D2A080194D427E003C7294 /* RelativeWeatherForecastTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = RelativeWeatherForecastTests.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+		B6D2A07E194D3794003C7294 /* RelativeWeatherForecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = RelativeWeatherForecast.swift; sourceTree = "<group>"; tabWidth = 4; };
+		B6D2A080194D427E003C7294 /* RelativeWeatherForecastTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = RelativeWeatherForecastTests.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
