@@ -1,0 +1,998 @@
+{
+    "response": {
+        "version":"0.1",
+        "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+        "features": {
+            "conditions": 1
+            ,
+            "forecast": 1
+            ,
+            "yesterday": 1
+        }
+    }
+    ,	"current_observation": {
+        "image": {
+            "url":"http://icons.wxug.com/graphics/wu2/logo_130x80.png",
+            "title":"Weather Underground",
+            "link":"http://www.wunderground.com"
+        },
+        "display_location": {
+            "full":"Oakland, CA",
+            "city":"Oakland",
+            "state":"CA",
+            "state_name":"California",
+            "country":"US",
+            "country_iso3166":"US",
+            "zip":"94618",
+            "magic":"1",
+            "wmo":"99999",
+            "latitude":"37.840000",
+            "longitude":"-122.240000",
+            "elevation":"103.00000000"
+        },
+        "observation_location": {
+            "full":"Upper Temescal, Oakland, California",
+            "city":"Upper Temescal, Oakland",
+            "state":"California",
+            "country":"US",
+            "country_iso3166":"US",
+            "latitude":"37.831886",
+            "longitude":"-122.249855",
+            "elevation":"176 ft"
+        },
+        "estimated": {
+        },
+        "station_id":"KCAOAKLA11",
+        "observation_time":"Last Updated on June 15, 4:41 PM PDT",
+        "observation_time_rfc822":"Sun, 15 Jun 2014 16:41:32 -0700",
+        "observation_epoch":"1402875692",
+        "local_time_rfc822":"Sun, 15 Jun 2014 16:41:32 -0700",
+        "local_epoch":"1402875692",
+        "local_tz_short":"PDT",
+        "local_tz_long":"America/Los_Angeles",
+        "local_tz_offset":"-0700",
+        "weather":"Mostly Cloudy",
+        "temperature_string":"70.7 F (21.5 C)",
+        "temp_f":70.7,
+        "temp_c":21.5,
+        "relative_humidity":"59%",
+        "wind_string":"Calm",
+        "wind_dir":"West",
+        "wind_degrees":281,
+        "wind_mph":0.0,
+        "wind_gust_mph":0,
+        "wind_kph":0,
+        "wind_gust_kph":0,
+        "pressure_mb":"1010",
+        "pressure_in":"29.83",
+        "pressure_trend":"-",
+        "dewpoint_string":"56 F (13 C)",
+        "dewpoint_f":56,
+        "dewpoint_c":13,
+        "heat_index_string":"NA",
+        "heat_index_f":"NA",
+        "heat_index_c":"NA",
+        "windchill_string":"NA",
+        "windchill_f":"NA",
+        "windchill_c":"NA",
+        "feelslike_string":"70.7 F (21.5 C)",
+        "feelslike_f":"70.7",
+        "feelslike_c":"21.5",
+        "visibility_mi":"10.0",
+        "visibility_km":"16.1",
+        "solarradiation":"--",
+        "UV":"4","precip_1hr_string":"0.00 in ( 0 mm)",
+        "precip_1hr_in":"0.00",
+        "precip_1hr_metric":" 0",
+        "precip_today_string":"0.00 in (0 mm)",
+        "precip_today_in":"0.00",
+        "precip_today_metric":"0",
+        "icon":"mostlycloudy",
+        "icon_url":"http://icons.wxug.com/i/c/k/mostlycloudy.gif",
+        "forecast_url":"http://www.wunderground.com/US/CA/Oakland.html",
+        "history_url":"http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=KCAOAKLA11",
+        "ob_url":"http://www.wunderground.com/cgi-bin/findweather/getForecast?query=37.831886,-122.249855",
+        "nowcast":""
+    }
+    ,
+    "forecast":{
+        "txt_forecast": {
+            "date":"3:37 PM PDT",
+            "forecastday": [
+                            {
+                            "period":0,
+                            "icon":"partlycloudy",
+                            "icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+                            "title":"Sunday",
+                            "fcttext":"Mix of sun and clouds. Lows overnight in the low 50s.",
+                            "fcttext_metric":"Mix of sun and clouds. Lows overnight 10 to 12.",
+                            "pop":"0"
+                            }
+                            ,
+                            {
+                            "period":1,
+                            "icon":"nt_partlycloudy",
+                            "icon_url":"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+                            "title":"Sunday Night",
+                            "fcttext":"A few clouds. Low 52F. Winds WSW at 10 to 20 mph.",
+                            "fcttext_metric":"Partly cloudy skies. Low 11C. Winds WSW at 15 to 30 kph.",
+                            "pop":"0"
+                            }
+                            ,
+                            {
+                            "period":2,
+                            "icon":"partlycloudy",
+                            "icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+                            "title":"Monday",
+                            "fcttext":"Partly cloudy skies. High 68F. Winds WSW at 15 to 25 mph.",
+                            "fcttext_metric":"Mostly sunny skies with gusty winds developing later in the day. High 20C. Winds WSW at 25 to 40 kph.",
+                            "pop":"0"
+                            }
+                            ,
+                            {
+                            "period":3,
+                            "icon":"nt_clear",
+                            "icon_url":"http://icons.wxug.com/i/c/k/nt_clear.gif",
+                            "title":"Monday Night",
+                            "fcttext":"Clear skies. Low 51F. Winds SW at 10 to 20 mph.",
+                            "fcttext_metric":"Clear. Windy early. Low 11C. Winds WSW at 15 to 30 kph.",
+                            "pop":"0"
+                            }
+                            ,
+                            {
+                            "period":4,
+                            "icon":"clear",
+                            "icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+                            "title":"Tuesday",
+                            "fcttext":"Mainly sunny. High 73F. Winds WNW at 10 to 20 mph.",
+                            "fcttext_metric":"Sunny skies. High 22C. WNW winds at 10 to 15 kph, increasing to 15 to 30 kph.",
+                            "pop":"0"
+                            }
+                            ,
+                            {
+                            "period":5,
+                            "icon":"nt_clear",
+                            "icon_url":"http://icons.wxug.com/i/c/k/nt_clear.gif",
+                            "title":"Tuesday Night",
+                            "fcttext":"Clear skies. Low 54F. Winds W at 10 to 15 mph.",
+                            "fcttext_metric":"Clear. Low 12C. Winds WNW at 15 to 30 kph.",
+                            "pop":"0"
+                            }
+                            ,
+                            {
+                            "period":6,
+                            "icon":"clear",
+                            "icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+                            "title":"Wednesday",
+                            "fcttext":"Mainly sunny. High 74F. Winds WSW at 10 to 20 mph.",
+                            "fcttext_metric":"Sunny. High 23C. Winds WSW at 15 to 30 kph.",
+                            "pop":"0"
+                            }
+                            ,
+                            {
+                            "period":7,
+                            "icon":"nt_clear",
+                            "icon_url":"http://icons.wxug.com/i/c/k/nt_clear.gif",
+                            "title":"Wednesday Night",
+                            "fcttext":"A mostly clear sky. Low 53F. Winds WSW at 10 to 15 mph.",
+                            "fcttext_metric":"A mostly clear sky. Low 12C. Winds WSW at 15 to 25 kph.",
+                            "pop":"10"
+                            }
+                            ]
+        },
+        "simpleforecast": {
+            "forecastday": [
+                            {"date":{
+                            "epoch":"1402884000",
+                            "pretty":"7:00 PM PDT on June 15, 2014",
+                            "day":15,
+                            "month":6,
+                            "year":2014,
+                            "yday":165,
+                            "hour":19,
+                            "min":"00",
+                            "sec":0,
+                            "isdst":"1",
+                            "monthname":"June",
+                            "monthname_short":"Jun",
+                            "weekday_short":"Sun",
+                            "weekday":"Sunday",
+                            "ampm":"PM",
+                            "tz_short":"PDT",
+                            "tz_long":"America/Los_Angeles"
+                            },
+                            "period":1,
+                            "high": {
+                            "fahrenheit":"74",
+                            "celsius":"23"
+                            },
+                            "low": {
+                            "fahrenheit":"52",
+                            "celsius":"11"
+                            },
+                            "conditions":"Cloudy with a chance of meatballs",
+                            "icon":"partlycloudy",
+                            "icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+                            "skyicon":"",
+                            "pop":0,
+                            "qpf_allday": {
+                            "in": 0.00,
+                            "mm": 0
+                            },
+                            "qpf_day": {
+                            "in": null,
+                            "mm": null
+                            },
+                            "qpf_night": {
+                            "in": 0.00,
+                            "mm": 0
+                            },
+                            "snow_allday": {
+                            "in": 0.0,
+                            "cm": 0.0
+                            },
+                            "snow_day": {
+                            "in": null,
+                            "cm": null
+                            },
+                            "snow_night": {
+                            "in": 0.0,
+                            "cm": 0.0
+                            },
+                            "maxwind": {
+                            "mph": 0,
+                            "kph": 0,
+                            "dir": "",
+                            "degrees": 0
+                            },
+                            "avewind": {
+                            "mph": 0,
+                            "kph": 0,
+                            "dir": "",
+                            "degrees": 0
+                            },
+                            "avehumidity": 85,
+                            "maxhumidity": 0,
+                            "minhumidity": 0
+                            }
+                            ,
+                            {"date":{
+                            "epoch":"1402970400",
+                            "pretty":"7:00 PM PDT on June 16, 2014",
+                            "day":16,
+                            "month":6,
+                            "year":2014,
+                            "yday":166,
+                            "hour":19,
+                            "min":"00",
+                            "sec":0,
+                            "isdst":"1",
+                            "monthname":"June",
+                            "monthname_short":"Jun",
+                            "weekday_short":"Mon",
+                            "weekday":"Monday",
+                            "ampm":"PM",
+                            "tz_short":"PDT",
+                            "tz_long":"America/Los_Angeles"
+                            },
+                            "period":2,
+                            "high": {
+                            "fahrenheit":"68",
+                            "celsius":"20"
+                            },
+                            "low": {
+                            "fahrenheit":"51",
+                            "celsius":"11"
+                            },
+                            "conditions":"Partly Cloudy",
+                            "icon":"partlycloudy",
+                            "icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+                            "skyicon":"",
+                            "pop":0,
+                            "qpf_allday": {
+                            "in": 0.00,
+                            "mm": 0
+                            },
+                            "qpf_day": {
+                            "in": 0.00,
+                            "mm": 0
+                            },
+                            "qpf_night": {
+                            "in": 0.00,
+                            "mm": 0
+                            },
+                            "snow_allday": {
+                            "in": 0.0,
+                            "cm": 0.0
+                            },
+                            "snow_day": {
+                            "in": 0.0,
+                            "cm": 0.0
+                            },
+                            "snow_night": {
+                            "in": 0.0,
+                            "cm": 0.0
+                            },
+                            "maxwind": {
+                            "mph": 25,
+                            "kph": 40,
+                            "dir": "WSW",
+                            "degrees": 251
+                            },
+                            "avewind": {
+                            "mph": 17,
+                            "kph": 27,
+                            "dir": "WSW",
+                            "degrees": 251
+                            },
+                            "avehumidity": 78,
+                            "maxhumidity": 0,
+                            "minhumidity": 0
+                            }
+                            ,
+                            {"date":{
+                            "epoch":"1403056800",
+                            "pretty":"7:00 PM PDT on June 17, 2014",
+                            "day":17,
+                            "month":6,
+                            "year":2014,
+                            "yday":167,
+                            "hour":19,
+                            "min":"00",
+                            "sec":0,
+                            "isdst":"1",
+                            "monthname":"June",
+                            "monthname_short":"Jun",
+                            "weekday_short":"Tue",
+                            "weekday":"Tuesday",
+                            "ampm":"PM",
+                            "tz_short":"PDT",
+                            "tz_long":"America/Los_Angeles"
+                            },
+                            "period":3,
+                            "high": {
+                            "fahrenheit":"73",
+                            "celsius":"23"
+                            },
+                            "low": {
+                            "fahrenheit":"54",
+                            "celsius":"12"
+                            },
+                            "conditions":"Clear",
+                            "icon":"clear",
+                            "icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+                            "skyicon":"",
+                            "pop":0,
+                            "qpf_allday": {
+                            "in": 0.00,
+                            "mm": 0
+                            },
+                            "qpf_day": {
+                            "in": 0.00,
+                            "mm": 0
+                            },
+                            "qpf_night": {
+                            "in": 0.00,
+                            "mm": 0
+                            },
+                            "snow_allday": {
+                            "in": 0.0,
+                            "cm": 0.0
+                            },
+                            "snow_day": {
+                            "in": 0.0,
+                            "cm": 0.0
+                            },
+                            "snow_night": {
+                            "in": 0.0,
+                            "cm": 0.0
+                            },
+                            "maxwind": {
+                            "mph": 20,
+                            "kph": 32,
+                            "dir": "WNW",
+                            "degrees": 302
+                            },
+                            "avewind": {
+                            "mph": 15,
+                            "kph": 24,
+                            "dir": "WNW",
+                            "degrees": 302
+                            },
+                            "avehumidity": 70,
+                            "maxhumidity": 0,
+                            "minhumidity": 0
+                            }
+                            ,
+                            {"date":{
+                            "epoch":"1403143200",
+                            "pretty":"7:00 PM PDT on June 18, 2014",
+                            "day":18,
+                            "month":6,
+                            "year":2014,
+                            "yday":168,
+                            "hour":19,
+                            "min":"00",
+                            "sec":0,
+                            "isdst":"1",
+                            "monthname":"June",
+                            "monthname_short":"Jun",
+                            "weekday_short":"Wed",
+                            "weekday":"Wednesday",
+                            "ampm":"PM",
+                            "tz_short":"PDT",
+                            "tz_long":"America/Los_Angeles"
+                            },
+                            "period":4,
+                            "high": {
+                            "fahrenheit":"74",
+                            "celsius":"23"
+                            },
+                            "low": {
+                            "fahrenheit":"53",
+                            "celsius":"12"
+                            },
+                            "conditions":"Clear",
+                            "icon":"clear",
+                            "icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+                            "skyicon":"",
+                            "pop":0,
+                            "qpf_allday": {
+                            "in": 0.00,
+                            "mm": 0
+                            },
+                            "qpf_day": {
+                            "in": 0.00,
+                            "mm": 0
+                            },
+                            "qpf_night": {
+                            "in": 0.00,
+                            "mm": 0
+                            },
+                            "snow_allday": {
+                            "in": 0.0,
+                            "cm": 0.0
+                            },
+                            "snow_day": {
+                            "in": 0.0,
+                            "cm": 0.0
+                            },
+                            "snow_night": {
+                            "in": 0.0,
+                            "cm": 0.0
+                            },
+                            "maxwind": {
+                            "mph": 15,
+                            "kph": 24,
+                            "dir": "WSW",
+                            "degrees": 255
+                            },
+                            "avewind": {
+                            "mph": 12,
+                            "kph": 19,
+                            "dir": "WSW",
+                            "degrees": 255
+                            },
+                            "avehumidity": 77,
+                            "maxhumidity": 0,
+                            "minhumidity": 0
+                            }
+                            ]
+        }
+    }
+    ,
+    "history": {
+        "date": {
+            "pretty": "June 14, 2014",
+            "year": "2014",
+            "mon": "06",
+            "mday": "14",
+            "hour": "12",
+            "min": "00",
+            "tzname": "America/Los_Angeles"
+        },
+        "utcdate": {
+            "pretty": "June 14, 2014",
+            "year": "2014",
+            "mon": "06",
+            "mday": "14",
+            "hour": "19",
+            "min": "00",
+            "tzname": "UTC"
+        },
+        "observations": [
+                         {
+                         "date": {
+                         "pretty": "12:53 AM PDT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "00",
+                         "min": "53",
+                         "tzname": "America/Los_Angeles"
+                         },
+                         "utcdate": {
+                         "pretty": "7:53 AM GMT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "07",
+                         "min": "53",
+                         "tzname": "UTC"
+                         },
+                         "tempm":"14.4", "tempi":"57.9","dewptm":"10.6", "dewpti":"51.1","hum":"78","wspdm":"5.6", "wspdi":"3.5","wgustm":"-9999.0", "wgusti":"-9999.0","wdird":"300","wdire":"WNW","vism":"16.1", "visi":"10.0","pressurem":"1014.0", "pressurei":"29.95","windchillm":"-999", "windchilli":"-999","heatindexm":"-9999", "heatindexi":"-9999","precipm":"-9999.00", "precipi":"-9999.00","conds":"Clear","icon":"clear","fog":"0","rain":"0","snow":"0","hail":"0","thunder":"0","tornado":"0","metar":"METAR KOAK 140753Z 30003KT 10SM CLR 14/11 A2995 RMK AO2 SLP140 T01440106 402220128" },
+                         {
+                         "date": {
+                         "pretty": "1:53 AM PDT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "01",
+                         "min": "53",
+                         "tzname": "America/Los_Angeles"
+                         },
+                         "utcdate": {
+                         "pretty": "8:53 AM GMT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "08",
+                         "min": "53",
+                         "tzname": "UTC"
+                         },
+                         "tempm":"13.3", "tempi":"55.9","dewptm":"9.4", "dewpti":"48.9","hum":"77","wspdm":"0.0", "wspdi":"0.0","wgustm":"-9999.0", "wgusti":"-9999.0","wdird":"0","wdire":"North","vism":"16.1", "visi":"10.0","pressurem":"1013.6", "pressurei":"29.94","windchillm":"-999", "windchilli":"-999","heatindexm":"-9999", "heatindexi":"-9999","precipm":"-9999.00", "precipi":"-9999.00","conds":"Clear","icon":"clear","fog":"0","rain":"0","snow":"0","hail":"0","thunder":"0","tornado":"0","metar":"METAR KOAK 140853Z 00000KT 10SM CLR 13/09 A2994 RMK AO2 SLP136 T01330094 58002" },
+                         {
+                         "date": {
+                         "pretty": "2:53 AM PDT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "02",
+                         "min": "53",
+                         "tzname": "America/Los_Angeles"
+                         },
+                         "utcdate": {
+                         "pretty": "9:53 AM GMT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "09",
+                         "min": "53",
+                         "tzname": "UTC"
+                         },
+                         "tempm":"13.3", "tempi":"55.9","dewptm":"10.0", "dewpti":"50.0","hum":"80","wspdm":"5.6", "wspdi":"3.5","wgustm":"-9999.0", "wgusti":"-9999.0","wdird":"20","wdire":"NNE","vism":"16.1", "visi":"10.0","pressurem":"1013.4", "pressurei":"29.93","windchillm":"-999", "windchilli":"-999","heatindexm":"-9999", "heatindexi":"-9999","precipm":"-9999.00", "precipi":"-9999.00","conds":"Clear","icon":"clear","fog":"0","rain":"0","snow":"0","hail":"0","thunder":"0","tornado":"0","metar":"METAR KOAK 140953Z 02003KT 10SM CLR 13/10 A2993 RMK AO2 SLP134 T01330100" },
+                         {
+                         "date": {
+                         "pretty": "3:53 AM PDT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "03",
+                         "min": "53",
+                         "tzname": "America/Los_Angeles"
+                         },
+                         "utcdate": {
+                         "pretty": "10:53 AM GMT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "10",
+                         "min": "53",
+                         "tzname": "UTC"
+                         },
+                         "tempm":"12.8", "tempi":"55.0","dewptm":"9.4", "dewpti":"48.9","hum":"80","wspdm":"13.0", "wspdi":"8.1","wgustm":"-9999.0", "wgusti":"-9999.0","wdird":"20","wdire":"NNE","vism":"16.1", "visi":"10.0","pressurem":"1013.7", "pressurei":"29.94","windchillm":"-999", "windchilli":"-999","heatindexm":"-9999", "heatindexi":"-9999","precipm":"-9999.00", "precipi":"-9999.00","conds":"Clear","icon":"clear","fog":"0","rain":"0","snow":"0","hail":"0","thunder":"0","tornado":"0","metar":"METAR KOAK 141053Z 02007KT 10SM CLR 13/09 A2994 RMK AO2 SLP137 T01280094" },
+                         {
+                         "date": {
+                         "pretty": "4:53 AM PDT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "04",
+                         "min": "53",
+                         "tzname": "America/Los_Angeles"
+                         },
+                         "utcdate": {
+                         "pretty": "11:53 AM GMT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "11",
+                         "min": "53",
+                         "tzname": "UTC"
+                         },
+                         "tempm":"12.8", "tempi":"55.0","dewptm":"10.6", "dewpti":"51.1","hum":"86","wspdm":"0.0", "wspdi":"0.0","wgustm":"-9999.0", "wgusti":"-9999.0","wdird":"0","wdire":"North","vism":"16.1", "visi":"10.0","pressurem":"1013.2", "pressurei":"29.92","windchillm":"-999", "windchilli":"-999","heatindexm":"-9999", "heatindexi":"-9999","precipm":"-9999.00", "precipi":"-9999.00","conds":"Clear","icon":"clear","fog":"0","rain":"0","snow":"0","hail":"0","thunder":"0","tornado":"0","metar":"METAR KOAK 141153Z 00000KT 10SM CLR 13/11 A2992 RMK AO2 SLP132 T01280106 10156 20128 58005" },
+                         {
+                         "date": {
+                         "pretty": "5:53 AM PDT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "05",
+                         "min": "53",
+                         "tzname": "America/Los_Angeles"
+                         },
+                         "utcdate": {
+                         "pretty": "12:53 PM GMT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "12",
+                         "min": "53",
+                         "tzname": "UTC"
+                         },
+                         "tempm":"12.2", "tempi":"54.0","dewptm":"10.0", "dewpti":"50.0","hum":"86","wspdm":"0.0", "wspdi":"0.0","wgustm":"-9999.0", "wgusti":"-9999.0","wdird":"0","wdire":"North","vism":"16.1", "visi":"10.0","pressurem":"1013.1", "pressurei":"29.92","windchillm":"-999", "windchilli":"-999","heatindexm":"-9999", "heatindexi":"-9999","precipm":"-9999.00", "precipi":"-9999.00","conds":"Partly Cloudy","icon":"partlycloudy","fog":"0","rain":"0","snow":"0","hail":"0","thunder":"0","tornado":"0","metar":"METAR KOAK 141253Z 00000KT 10SM FEW200 12/10 A2992 RMK AO2 SLP131 T01220100" },
+                         {
+                         "date": {
+                         "pretty": "6:53 AM PDT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "06",
+                         "min": "53",
+                         "tzname": "America/Los_Angeles"
+                         },
+                         "utcdate": {
+                         "pretty": "1:53 PM GMT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "13",
+                         "min": "53",
+                         "tzname": "UTC"
+                         },
+                         "tempm":"14.4", "tempi":"57.9","dewptm":"11.7", "dewpti":"53.1","hum":"84","wspdm":"0.0", "wspdi":"0.0","wgustm":"-9999.0", "wgusti":"-9999.0","wdird":"0","wdire":"North","vism":"16.1", "visi":"10.0","pressurem":"1013.3", "pressurei":"29.93","windchillm":"-999", "windchilli":"-999","heatindexm":"-9999", "heatindexi":"-9999","precipm":"-9999.00", "precipi":"-9999.00","conds":"Partly Cloudy","icon":"partlycloudy","fog":"0","rain":"0","snow":"0","hail":"0","thunder":"0","tornado":"0","metar":"METAR KOAK 141353Z 00000KT 10SM FEW200 14/12 A2993 RMK AO2 SLP133 T01440117" },
+                         {
+                         "date": {
+                         "pretty": "7:53 AM PDT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "07",
+                         "min": "53",
+                         "tzname": "America/Los_Angeles"
+                         },
+                         "utcdate": {
+                         "pretty": "2:53 PM GMT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "14",
+                         "min": "53",
+                         "tzname": "UTC"
+                         },
+                         "tempm":"17.2", "tempi":"63.0","dewptm":"12.2", "dewpti":"54.0","hum":"72","wspdm":"0.0", "wspdi":"0.0","wgustm":"-9999.0", "wgusti":"-9999.0","wdird":"0","wdire":"North","vism":"16.1", "visi":"10.0","pressurem":"1013.4", "pressurei":"29.93","windchillm":"-999", "windchilli":"-999","heatindexm":"-9999", "heatindexi":"-9999","precipm":"-9999.00", "precipi":"-9999.00","conds":"Partly Cloudy","icon":"partlycloudy","fog":"0","rain":"0","snow":"0","hail":"0","thunder":"0","tornado":"0","metar":"METAR KOAK 141453Z 00000KT 10SM FEW200 17/12 A2993 RMK AO2 SLP134 T01720122 53002" },
+                         {
+                         "date": {
+                         "pretty": "8:53 AM PDT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "08",
+                         "min": "53",
+                         "tzname": "America/Los_Angeles"
+                         },
+                         "utcdate": {
+                         "pretty": "3:53 PM GMT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "15",
+                         "min": "53",
+                         "tzname": "UTC"
+                         },
+                         "tempm":"18.3", "tempi":"64.9","dewptm":"11.7", "dewpti":"53.1","hum":"65","wspdm":"7.4", "wspdi":"4.6","wgustm":"-9999.0", "wgusti":"-9999.0","wdird":"280","wdire":"West","vism":"16.1", "visi":"10.0","pressurem":"1013.5", "pressurei":"29.93","windchillm":"-999", "windchilli":"-999","heatindexm":"-9999", "heatindexi":"-9999","precipm":"-9999.00", "precipi":"-9999.00","conds":"Partly Cloudy","icon":"partlycloudy","fog":"0","rain":"0","snow":"0","hail":"0","thunder":"0","tornado":"0","metar":"METAR KOAK 141553Z 28004KT 10SM FEW200 18/12 A2993 RMK AO2 SLP135 T01830117" },
+                         {
+                         "date": {
+                         "pretty": "9:53 AM PDT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "09",
+                         "min": "53",
+                         "tzname": "America/Los_Angeles"
+                         },
+                         "utcdate": {
+                         "pretty": "4:53 PM GMT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "16",
+                         "min": "53",
+                         "tzname": "UTC"
+                         },
+                         "tempm":"18.9", "tempi":"66.0","dewptm":"12.2", "dewpti":"54.0","hum":"65","wspdm":"9.3", "wspdi":"5.8","wgustm":"-9999.0", "wgusti":"-9999.0","wdird":"230","wdire":"SW","vism":"16.1", "visi":"10.0","pressurem":"1013.2", "pressurei":"29.92","windchillm":"-999", "windchilli":"-999","heatindexm":"-9999", "heatindexi":"-9999","precipm":"-9999.00", "precipi":"-9999.00","conds":"Partly Cloudy","icon":"partlycloudy","fog":"0","rain":"0","snow":"0","hail":"0","thunder":"0","tornado":"0","metar":"METAR KOAK 141653Z 23005KT 10SM FEW200 19/12 A2992 RMK AO2 SLP132 T01890122" },
+                         {
+                         "date": {
+                         "pretty": "10:53 AM PDT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "10",
+                         "min": "53",
+                         "tzname": "America/Los_Angeles"
+                         },
+                         "utcdate": {
+                         "pretty": "5:53 PM GMT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "17",
+                         "min": "53",
+                         "tzname": "UTC"
+                         },
+                         "tempm":"20.6", "tempi":"69.1","dewptm":"11.7", "dewpti":"53.1","hum":"57","wspdm":"11.1", "wspdi":"6.9","wgustm":"-9999.0", "wgusti":"-9999.0","wdird":"240","wdire":"WSW","vism":"16.1", "visi":"10.0","pressurem":"1013.4", "pressurei":"29.93","windchillm":"-999", "windchilli":"-999","heatindexm":"-9999", "heatindexi":"-9999","precipm":"-9999.00", "precipi":"-9999.00","conds":"Scattered Clouds","icon":"partlycloudy","fog":"0","rain":"0","snow":"0","hail":"0","thunder":"0","tornado":"0","metar":"METAR KOAK 141753Z 24006KT 10SM SCT200 21/12 A2993 RMK AO2 SLP134 T02060117 10206 20117 50000" },
+                         {
+                         "date": {
+                         "pretty": "11:53 AM PDT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "11",
+                         "min": "53",
+                         "tzname": "America/Los_Angeles"
+                         },
+                         "utcdate": {
+                         "pretty": "6:53 PM GMT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "18",
+                         "min": "53",
+                         "tzname": "UTC"
+                         },
+                         "tempm":"23.9", "tempi":"75.0","dewptm":"8.9", "dewpti":"48.0","hum":"38","wspdm":"9.3", "wspdi":"5.8","wgustm":"-9999.0", "wgusti":"-9999.0","wdird":"270","wdire":"West","vism":"16.1", "visi":"10.0","pressurem":"1013.2", "pressurei":"29.92","windchillm":"-999", "windchilli":"-999","heatindexm":"-9999", "heatindexi":"-9999","precipm":"-9999.00", "precipi":"-9999.00","conds":"Scattered Clouds","icon":"partlycloudy","fog":"0","rain":"0","snow":"0","hail":"0","thunder":"0","tornado":"0","metar":"METAR KOAK 141853Z 27005KT 10SM SCT200 24/09 A2992 RMK AO2 SLP132 T02390089" },
+                         {
+                         "date": {
+                         "pretty": "12:53 PM PDT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "12",
+                         "min": "53",
+                         "tzname": "America/Los_Angeles"
+                         },
+                         "utcdate": {
+                         "pretty": "7:53 PM GMT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "19",
+                         "min": "53",
+                         "tzname": "UTC"
+                         },
+                         "tempm":"25.0", "tempi":"77.0","dewptm":"8.9", "dewpti":"48.0","hum":"36","wspdm":"13.0", "wspdi":"8.1","wgustm":"-9999.0", "wgusti":"-9999.0","wdird":"250","wdire":"WSW","vism":"16.1", "visi":"10.0","pressurem":"1012.7", "pressurei":"29.91","windchillm":"-999", "windchilli":"-999","heatindexm":"-9999", "heatindexi":"-9999","precipm":"-9999.00", "precipi":"-9999.00","conds":"Scattered Clouds","icon":"partlycloudy","fog":"0","rain":"0","snow":"0","hail":"0","thunder":"0","tornado":"0","metar":"METAR KOAK 141953Z 25007KT 10SM SCT200 25/09 A2991 RMK AO2 SLP127 T02500089" },
+                         {
+                         "date": {
+                         "pretty": "1:53 PM PDT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "13",
+                         "min": "53",
+                         "tzname": "America/Los_Angeles"
+                         },
+                         "utcdate": {
+                         "pretty": "8:53 PM GMT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "20",
+                         "min": "53",
+                         "tzname": "UTC"
+                         },
+                         "tempm":"26.1", "tempi":"79.0","dewptm":"11.7", "dewpti":"53.1","hum":"40","wspdm":"16.7", "wspdi":"10.4","wgustm":"-9999.0", "wgusti":"-9999.0","wdird":"290","wdire":"WNW","vism":"16.1", "visi":"10.0","pressurem":"1012.4", "pressurei":"29.90","windchillm":"-999", "windchilli":"-999","heatindexm":"-9999", "heatindexi":"-9999","precipm":"-9999.00", "precipi":"-9999.00","conds":"Mostly Cloudy","icon":"mostlycloudy","fog":"0","rain":"0","snow":"0","hail":"0","thunder":"0","tornado":"0","metar":"METAR KOAK 142053Z 29009KT 10SM BKN200 26/12 A2990 RMK AO2 SLP124 T02610117 58009" },
+                         {
+                         "date": {
+                         "pretty": "2:53 PM PDT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "14",
+                         "min": "53",
+                         "tzname": "America/Los_Angeles"
+                         },
+                         "utcdate": {
+                         "pretty": "9:53 PM GMT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "21",
+                         "min": "53",
+                         "tzname": "UTC"
+                         },
+                         "tempm":"22.2", "tempi":"72.0","dewptm":"11.1", "dewpti":"52.0","hum":"49","wspdm":"29.6", "wspdi":"18.4","wgustm":"-9999.0", "wgusti":"-9999.0","wdird":"310","wdire":"NW","vism":"16.1", "visi":"10.0","pressurem":"1012.4", "pressurei":"29.90","windchillm":"-999", "windchilli":"-999","heatindexm":"-9999", "heatindexi":"-9999","precipm":"-9999.00", "precipi":"-9999.00","conds":"Mostly Cloudy","icon":"mostlycloudy","fog":"0","rain":"0","snow":"0","hail":"0","thunder":"0","tornado":"0","metar":"METAR KOAK 142153Z 31016KT 10SM BKN200 22/11 A2990 RMK AO2 SLP124 T02220111" },
+                         {
+                         "date": {
+                         "pretty": "3:53 PM PDT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "15",
+                         "min": "53",
+                         "tzname": "America/Los_Angeles"
+                         },
+                         "utcdate": {
+                         "pretty": "10:53 PM GMT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "22",
+                         "min": "53",
+                         "tzname": "UTC"
+                         },
+                         "tempm":"20.6", "tempi":"69.1","dewptm":"10.0", "dewpti":"50.0","hum":"51","wspdm":"27.8", "wspdi":"17.3","wgustm":"-9999.0", "wgusti":"-9999.0","wdird":"290","wdire":"WNW","vism":"16.1", "visi":"10.0","pressurem":"1012.2", "pressurei":"29.89","windchillm":"-999", "windchilli":"-999","heatindexm":"-9999", "heatindexi":"-9999","precipm":"-9999.00", "precipi":"-9999.00","conds":"Mostly Cloudy","icon":"mostlycloudy","fog":"0","rain":"0","snow":"0","hail":"0","thunder":"0","tornado":"0","metar":"METAR KOAK 142253Z 29015KT 10SM BKN200 21/10 A2989 RMK AO2 SLP122 T02060100" },
+                         {
+                         "date": {
+                         "pretty": "4:53 PM PDT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "16",
+                         "min": "53",
+                         "tzname": "America/Los_Angeles"
+                         },
+                         "utcdate": {
+                         "pretty": "11:53 PM GMT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "23",
+                         "min": "53",
+                         "tzname": "UTC"
+                         },
+                         "tempm":"19.4", "tempi":"66.9","dewptm":"10.0", "dewpti":"50.0","hum":"54","wspdm":"29.6", "wspdi":"18.4","wgustm":"-9999.0", "wgusti":"-9999.0","wdird":"280","wdire":"West","vism":"16.1", "visi":"10.0","pressurem":"1012.0", "pressurei":"29.89","windchillm":"-999", "windchilli":"-999","heatindexm":"-9999", "heatindexi":"-9999","precipm":"-9999.00", "precipi":"-9999.00","conds":"Mostly Cloudy","icon":"mostlycloudy","fog":"0","rain":"0","snow":"0","hail":"0","thunder":"0","tornado":"0","metar":"METAR KOAK 142353Z 28016KT 10SM BKN200 19/10 A2988 RMK AO2 SLP120 T01940100 10267 20194 58005" },
+                         {
+                         "date": {
+                         "pretty": "5:53 PM PDT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "17",
+                         "min": "53",
+                         "tzname": "America/Los_Angeles"
+                         },
+                         "utcdate": {
+                         "pretty": "12:53 AM GMT on June 15, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "15",
+                         "hour": "00",
+                         "min": "53",
+                         "tzname": "UTC"
+                         },
+                         "tempm":"18.9", "tempi":"66.0","dewptm":"9.4", "dewpti":"48.9","hum":"54","wspdm":"20.4", "wspdi":"12.7","wgustm":"-9999.0", "wgusti":"-9999.0","wdird":"270","wdire":"West","vism":"16.1", "visi":"10.0","pressurem":"1011.6", "pressurei":"29.88","windchillm":"-999", "windchilli":"-999","heatindexm":"-9999", "heatindexi":"-9999","precipm":"-9999.00", "precipi":"-9999.00","conds":"Mostly Cloudy","icon":"mostlycloudy","fog":"0","rain":"0","snow":"0","hail":"0","thunder":"0","tornado":"0","metar":"METAR KOAK 150053Z 27011KT 10SM BKN200 19/09 A2987 RMK AO2 SLP116 T01890094" },
+                         {
+                         "date": {
+                         "pretty": "6:53 PM PDT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "18",
+                         "min": "53",
+                         "tzname": "America/Los_Angeles"
+                         },
+                         "utcdate": {
+                         "pretty": "1:53 AM GMT on June 15, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "15",
+                         "hour": "01",
+                         "min": "53",
+                         "tzname": "UTC"
+                         },
+                         "tempm":"17.8", "tempi":"64.0","dewptm":"9.4", "dewpti":"48.9","hum":"58","wspdm":"24.1", "wspdi":"15.0","wgustm":"31.5", "wgusti":"19.6","wdird":"280","wdire":"West","vism":"16.1", "visi":"10.0","pressurem":"1011.3", "pressurei":"29.87","windchillm":"-999", "windchilli":"-999","heatindexm":"-9999", "heatindexi":"-9999","precipm":"-9999.00", "precipi":"-9999.00","conds":"Scattered Clouds","icon":"partlycloudy","fog":"0","rain":"0","snow":"0","hail":"0","thunder":"0","tornado":"0","metar":"METAR KOAK 150153Z 28013G17KT 10SM SCT200 18/09 A2986 RMK AO2 SLP113 T01780094" },
+                         {
+                         "date": {
+                         "pretty": "7:53 PM PDT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "19",
+                         "min": "53",
+                         "tzname": "America/Los_Angeles"
+                         },
+                         "utcdate": {
+                         "pretty": "2:53 AM GMT on June 15, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "15",
+                         "hour": "02",
+                         "min": "53",
+                         "tzname": "UTC"
+                         },
+                         "tempm":"16.1", "tempi":"61.0","dewptm":"9.4", "dewpti":"48.9","hum":"64","wspdm":"25.9", "wspdi":"16.1","wgustm":"-9999.0", "wgusti":"-9999.0","wdird":"280","wdire":"West","vism":"16.1", "visi":"10.0","pressurem":"1011.0", "pressurei":"29.86","windchillm":"-999", "windchilli":"-999","heatindexm":"-9999", "heatindexi":"-9999","precipm":"-9999.00", "precipi":"-9999.00","conds":"Partly Cloudy","icon":"partlycloudy","fog":"0","rain":"0","snow":"0","hail":"0","thunder":"0","tornado":"0","metar":"METAR KOAK 150253Z 28014KT 10SM FEW200 16/09 A2986 RMK AO2 SLP110 T01610094 56009" },
+                         {
+                         "date": {
+                         "pretty": "8:53 PM PDT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "20",
+                         "min": "53",
+                         "tzname": "America/Los_Angeles"
+                         },
+                         "utcdate": {
+                         "pretty": "3:53 AM GMT on June 15, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "15",
+                         "hour": "03",
+                         "min": "53",
+                         "tzname": "UTC"
+                         },
+                         "tempm":"15.0", "tempi":"59.0","dewptm":"8.9", "dewpti":"48.0","hum":"67","wspdm":"18.5", "wspdi":"11.5","wgustm":"-9999.0", "wgusti":"-9999.0","wdird":"290","wdire":"WNW","vism":"16.1", "visi":"10.0","pressurem":"1010.9", "pressurei":"29.86","windchillm":"-999", "windchilli":"-999","heatindexm":"-9999", "heatindexi":"-9999","precipm":"-9999.00", "precipi":"-9999.00","conds":"Partly Cloudy","icon":"partlycloudy","fog":"0","rain":"0","snow":"0","hail":"0","thunder":"0","tornado":"0","metar":"METAR KOAK 150353Z 29010KT 10SM FEW200 15/09 A2986 RMK AO2 SLP109 T01500089" },
+                         {
+                         "date": {
+                         "pretty": "9:53 PM PDT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "21",
+                         "min": "53",
+                         "tzname": "America/Los_Angeles"
+                         },
+                         "utcdate": {
+                         "pretty": "4:53 AM GMT on June 15, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "15",
+                         "hour": "04",
+                         "min": "53",
+                         "tzname": "UTC"
+                         },
+                         "tempm":"14.4", "tempi":"57.9","dewptm":"9.4", "dewpti":"48.9","hum":"72","wspdm":"20.4", "wspdi":"12.7","wgustm":"-9999.0", "wgusti":"-9999.0","wdird":"270","wdire":"West","vism":"16.1", "visi":"10.0","pressurem":"1011.2", "pressurei":"29.86","windchillm":"-999", "windchilli":"-999","heatindexm":"-9999", "heatindexi":"-9999","precipm":"-9999.00", "precipi":"-9999.00","conds":"Partly Cloudy","icon":"partlycloudy","fog":"0","rain":"0","snow":"0","hail":"0","thunder":"0","tornado":"0","metar":"METAR KOAK 150453Z 27011KT 10SM FEW010 14/09 A2986 RMK AO2 SLP112 T01440094" },
+                         {
+                         "date": {
+                         "pretty": "10:53 PM PDT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "22",
+                         "min": "53",
+                         "tzname": "America/Los_Angeles"
+                         },
+                         "utcdate": {
+                         "pretty": "5:53 AM GMT on June 15, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "15",
+                         "hour": "05",
+                         "min": "53",
+                         "tzname": "UTC"
+                         },
+                         "tempm":"13.9", "tempi":"57.0","dewptm":"9.4", "dewpti":"48.9","hum":"74","wspdm":"22.2", "wspdi":"13.8","wgustm":"-9999.0", "wgusti":"-9999.0","wdird":"260","wdire":"West","vism":"16.1", "visi":"10.0","pressurem":"1011.1", "pressurei":"29.86","windchillm":"-999", "windchilli":"-999","heatindexm":"-9999", "heatindexi":"-9999","precipm":"-9999.00", "precipi":"-9999.00","conds":"Clear","icon":"clear","fog":"0","rain":"0","snow":"0","hail":"0","thunder":"0","tornado":"0","metar":"METAR KOAK 150553Z 26012KT 10SM CLR 14/09 A2986 RMK AO2 SLP111 T01390094 10194 20139 50001" },
+                         {
+                         "date": {
+                         "pretty": "11:53 PM PDT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "23",
+                         "min": "53",
+                         "tzname": "America/Los_Angeles"
+                         },
+                         "utcdate": {
+                         "pretty": "6:53 AM GMT on June 15, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "15",
+                         "hour": "06",
+                         "min": "53",
+                         "tzname": "UTC"
+                         },
+                         "tempm":"14.4", "tempi":"57.9","dewptm":"9.4", "dewpti":"48.9","hum":"72","wspdm":"20.4", "wspdi":"12.7","wgustm":"-9999.0", "wgusti":"-9999.0","wdird":"280","wdire":"West","vism":"16.1", "visi":"10.0","pressurem":"1010.6", "pressurei":"29.85","windchillm":"-999", "windchilli":"-999","heatindexm":"-9999", "heatindexi":"-9999","precipm":"-9999.00", "precipi":"-9999.00","conds":"Clear","icon":"clear","fog":"0","rain":"0","snow":"0","hail":"0","thunder":"0","tornado":"0","metar":"METAR KOAK 150653Z 28011KT 10SM CLR 14/09 A2985 RMK AO2 SLP106 T01440094" }
+                         ],
+        "dailysummary": [
+                         { "date": {
+                         "pretty": "12:00 PM PDT on June 14, 2014",
+                         "year": "2014",
+                         "mon": "06",
+                         "mday": "14",
+                         "hour": "12",
+                         "min": "00",
+                         "tzname": "America/Los_Angeles"
+                         },
+                         "fog":"0","rain":"0","snow":"0","snowfallm":"0.00", "snowfalli":"0.00","monthtodatesnowfallm":"0.00", "monthtodatesnowfalli":"0.00","since1julsnowfallm":"0.00", "since1julsnowfalli":"0.00","snowdepthm":"", "snowdepthi":"","hail":"0","thunder":"0","tornado":"0","meantempm":"19", "meantempi":"67","meandewptm":"10", "meandewpti":"50","meanpressurem":"1012", "meanpressurei":"29.90","meanwindspdm":"14", "meanwindspdi":"9","meanwdire":"","meanwdird":"282","meanvism":"16", "meanvisi":"10","humidity":"","maxtempm":"27", "maxtempi":"80","mintempm":"12", "mintempi":"53","maxhumidity":"89","minhumidity":"36","maxdewptm":"12", "maxdewpti":"54","mindewptm":"9", "mindewpti":"48","maxpressurem":"1014", "maxpressurei":"29.95","minpressurem":"1011", "minpressurei":"29.85","maxwspdm":"37", "maxwspdi":"23","minwspdm":"0", "minwspdi":"0","maxvism":"16", "maxvisi":"10","minvism":"16", "minvisi":"10","gdegreedays":"16","heatingdegreedays":"0","coolingdegreedays":"2","precipm":"0.00", "precipi":"0.00","precipsource":"","heatingdegreedaysnormal":"3","monthtodateheatingdegreedays":"36","monthtodateheatingdegreedaysnormal":"58","since1sepheatingdegreedays":"","since1sepheatingdegreedaysnormal":"","since1julheatingdegreedays":"2305","since1julheatingdegreedaysnormal":"2828","coolingdegreedaysnormal":"1","monthtodatecoolingdegreedays":"10","monthtodatecoolingdegreedaysnormal":"3","since1sepcoolingdegreedays":"","since1sepcoolingdegreedaysnormal":"","since1jancoolingdegreedays":"54","since1jancoolingdegreedaysnormal":"19" }
+                         ]
+    }
+}

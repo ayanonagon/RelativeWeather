@@ -16,13 +16,34 @@ class RelativeWeatherForecastTests : XCTestCase {
         XCTAssertNil(forecast.currentCondition)
         XCTAssertNil(forecast.tomorrowCondition)
 
-        XCTAssertEqualWithAccuracy(forecast.yesterdayHigh, 0.0, 0.001)
-        XCTAssertEqualWithAccuracy(forecast.todayHigh, 0.0, 0.001)
-        XCTAssertEqualWithAccuracy(forecast.tomorrowHigh, 0.0, 0.001)
+        XCTAssertNil(forecast.yesterdayHigh)
+        XCTAssertNil(forecast.todayHigh)
+        XCTAssertNil(forecast.tomorrowHigh)
 
-        XCTAssertEqualWithAccuracy(forecast.yesterdayLow, 0.0, 0.001)
-        XCTAssertEqualWithAccuracy(forecast.todayLow, 0.0, 0.001)
-        XCTAssertEqualWithAccuracy(forecast.tomorrowLow, 0.0, 0.001)
+        XCTAssertNil(forecast.yesterdayLow)
+        XCTAssertNil(forecast.todayLow)
+        XCTAssertNil(forecast.tomorrowLow)
     }
 
+    func testUpdateWithResponse() {
+        let forecast : RelativeWeatherForecast = RelativeWeatherForecast()
+
+        let filePath = NSBundle(forClass:RelativeWeatherForecastTests.classForKeyedArchiver()).pathForResource("WundergroundResponse", ofType:"json")
+        let fileString = NSString.stringWithContentsOfFile(filePath, encoding:NSUTF8StringEncoding, error:nil)
+        let responseData : NSData = fileString.dataUsingEncoding(NSUTF8StringEncoding)
+        let response : AnyObject! = NSJSONSerialization.JSONObjectWithData(responseData, options:NSJSONReadingOptions(0), error:nil)
+
+        forecast.__update(response as NSDictionary)
+
+        XCTAssertEqual(forecast.currentCondition!, "Cloudy with a chance of meatballs")
+        XCTAssertEqual(forecast.tomorrowCondition!, "Partly Cloudy")
+
+        XCTAssertEqual(forecast.yesterdayHigh!, 27)
+        XCTAssertEqual(forecast.todayHigh!, 23)
+        XCTAssertEqual(forecast.tomorrowHigh!, 20)
+
+        XCTAssertEqual(forecast.yesterdayLow!, 12)
+        XCTAssertEqual(forecast.todayLow!, 11)
+        XCTAssertEqual(forecast.tomorrowLow!, 11)
+    }
 }
