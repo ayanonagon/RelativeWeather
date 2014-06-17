@@ -43,54 +43,22 @@ class RelativeWeatherForecast {
     }
 
     func __update(response: NSDictionary) {
-        if let history = response["history"] as? NSDictionary {
-            if let dailySummary = history["dailysummary"] as? NSArray {
-                if let yesterday = dailySummary[0] as? NSDictionary {
-                    if let yesterdayHighString = yesterday["maxtempm"] as? NSString {
-                        self.yesterdayHigh = yesterdayHighString.floatValue
-                    }
-                    if let yesterdayLowString = yesterday["mintempm"] as? NSString {
-                        self.yesterdayLow = yesterdayLowString.floatValue
-                    }
-                }
-            }
-        }
-        if let forecast = response["forecast"] as? NSDictionary {
-            if let simpleForecast = forecast["simpleforecast"] as? NSDictionary {
-                if let forecastDay = simpleForecast["forecastday"] as? NSArray {
-                    if let today = forecastDay[0] as? NSDictionary {
-                        if let todayCondition = today["conditions"] as? String {
-                            self.currentCondition = todayCondition
-                        }
-                        if let todayHighDict = today["high"] as? NSDictionary {
-                            if let todayHighString = todayHighDict["celsius"] as? NSString {
-                                self.todayHigh = todayHighString.floatValue
-                            }
-                        }
-                        if let todayLowDict = today["low"] as? NSDictionary {
-                            if let todayLowString = todayLowDict["celsius"] as? NSString {
-                                self.todayLow = todayLowString.floatValue
-                            }
-                        }
-                    }
-                    if let tomorrow = forecastDay[1] as? NSDictionary {
-                        if let tomorrowCondition = tomorrow["conditions"] as? String {
-                            self.tomorrowCondition = tomorrowCondition
-                        }
-                        if let tomorrowHighDict = tomorrow["high"] as? NSDictionary {
-                            if let tomorrowHighString = tomorrowHighDict["celsius"] as? NSString {
-                                self.tomorrowHigh = tomorrowHighString.floatValue
-                            }
-                        }
-                        if let tomorrowLowDict = tomorrow["low"] as? NSDictionary {
-                            if let tomorrowLowString = tomorrowLowDict["celsius"] as? NSString {
-                                self.tomorrowLow = tomorrowLowString.floatValue
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        let dailySummary = response.valueForKeyPath("history.dailysummary") as NSArray
+        let yesterday = dailySummary.objectAtIndex(0) as NSDictionary
+        self.yesterdayHigh = yesterday.valueForKey("maxtempm").floatValue
+        self.yesterdayLow = yesterday.valueForKey("mintempm").floatValue
+
+        let forecast = response.valueForKeyPath("forecast.simpleforecast.forecastday") as NSArray
+
+        let today = forecast.objectAtIndex(0) as NSDictionary
+        self.currentCondition = today.valueForKey("conditions") as NSString
+        self.todayHigh = today.valueForKeyPath("high.celsius").floatValue
+        self.todayLow = today.valueForKeyPath("low.celsius").floatValue
+
+        let tomorrow = forecast.objectAtIndex(1) as NSDictionary
+        self.tomorrowCondition = tomorrow.valueForKey("conditions") as NSString
+        self.tomorrowHigh = tomorrow.valueForKeyPath("high.celsius").floatValue
+        self.tomorrowLow = tomorrow.valueForKeyPath("low.celsius").floatValue
     }
 
 }
