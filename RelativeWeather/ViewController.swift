@@ -14,6 +14,6 @@ class ViewController: UIViewController {
     let forecast : RelativeWeatherForecast = RelativeWeatherForecast()
 
     override func viewDidLoad()  {
-        forecast.update(CLLocationCoordinate2DMake(37.842778, -122.246111))
+//        forecast.update(CLLocationCoordinate2DMake(37.842778, -122.246111))
     }
 }

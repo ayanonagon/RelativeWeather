@@ -33,7 +33,7 @@ class RelativeWeatherForecastTests : XCTestCase {
         let responseData : NSData = fileString.dataUsingEncoding(NSUTF8StringEncoding)
         let response : AnyObject! = NSJSONSerialization.JSONObjectWithData(responseData, options:NSJSONReadingOptions(0), error:nil)
 
-        forecast.__update(response as NSDictionary)
+        forecast.__update(JSONValue(responseData))
 
         XCTAssertEqual(forecast.currentCondition!, "Cloudy with a chance of meatballs")
         XCTAssertEqual(forecast.tomorrowCondition!, "Partly Cloudy")

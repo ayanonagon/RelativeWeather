@@ -9,56 +9,58 @@
 import Foundation
 import CoreLocation
 
-class RelativeWeatherForecast {
+public class RelativeWeatherForecast {
 
-    var currentCondition : String?
-    var tomorrowCondition : String?
+    public var currentCondition : String?
+    public var tomorrowCondition : String?
 
-    var yesterdayHigh : Float?
-    var todayHigh : Float?
-    var tomorrowHigh : Float?
+    public var yesterdayHigh : Float?
+    public var todayHigh : Float?
+    public var tomorrowHigh : Float?
 
-    var yesterdayLow : Float?
-    var todayLow : Float?
-    var tomorrowLow : Float?
+    public var yesterdayLow : Float?
+    public var todayLow : Float?
+    public var tomorrowLow : Float?
 
-    init() {
+    public init() {
     }
 
-    func update(location: CLLocationCoordinate2D) {
+    public func update(location: CLLocationCoordinate2D) {
         let manager : AFHTTPRequestOperationManager = AFHTTPRequestOperationManager()
         let urlString = "http://api.wunderground.com/api/ACCESS_TOKEN/conditions/forecast/yesterday/q/\(location.latitude),\(location.longitude).json"
-        manager.GET(urlString,
-            parameters:nil,
-            success:{
-                (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) -> Void in
-                if let response = responseObject as? NSDictionary {
-                    self.__update(response)
-                }
-            },
-            failure:{
-                (operation: AFHTTPRequestOperation!, error: AnyObject!) -> Void in
-            }
-        )
+        Alamofire.request(.GET, urlString).response { (request, response, data, error) in
+            self.__update(JSONValue(data as NSData))
+        }
     }
 
-    func __update(response: NSDictionary) {
-        let dailySummary = response.valueForKeyPath("history.dailysummary") as NSArray
-        let yesterday = dailySummary.objectAtIndex(0) as NSDictionary
-        self.yesterdayHigh = yesterday.valueForKey("maxtempm").floatValue
-        self.yesterdayLow = yesterday.valueForKey("mintempm").floatValue
+    func __update(response: JSONValue) {
+        let yesterday = response["history"]["dailysummary"][0]
+        if let yesterdayHigh = yesterday["maxtempm"].string {
+            self.yesterdayHigh = (yesterdayHigh as NSString).floatValue
+        }
+        if let yesterdayLow = yesterday["mintempm"].string {
+            self.yesterdayLow = (yesterdayLow as NSString).floatValue
+        }
 
-        let forecast = response.valueForKeyPath("forecast.simpleforecast.forecastday") as NSArray
+        let forecast = response["forecast"]["simpleforecast"]["forecastday"]
 
-        let today = forecast.objectAtIndex(0) as NSDictionary
-        self.currentCondition = today.valueForKey("conditions") as NSString
-        self.todayHigh = today.valueForKeyPath("high.celsius").floatValue
-        self.todayLow = today.valueForKeyPath("low.celsius").floatValue
+        let today = forecast[0]
+        self.currentCondition = today["conditions"].string
+        if let todayHigh = today["high"]["celsius"].string {
+            self.todayHigh = (todayHigh as NSString).floatValue
+        }
+        if let todayLow = today["low"]["celsius"].string {
+            self.todayLow = (todayLow as NSString).floatValue
+        }
 
-        let tomorrow = forecast.objectAtIndex(1) as NSDictionary
-        self.tomorrowCondition = tomorrow.valueForKey("conditions") as NSString
-        self.tomorrowHigh = tomorrow.valueForKeyPath("high.celsius").floatValue
-        self.tomorrowLow = tomorrow.valueForKeyPath("low.celsius").floatValue
+        let tomorrow = forecast[1]
+        self.tomorrowCondition = tomorrow["conditions"].string
+        if let tomorrowHigh = tomorrow["high"]["celsius"].string {
+            self.tomorrowHigh = (tomorrowHigh as NSString).floatValue
+        }
+        if let tomorrowLow = tomorrow["low"]["celsius"].string {
+            self.tomorrowLow = (tomorrowLow as NSString).floatValue
+        }
     }
 
 }
